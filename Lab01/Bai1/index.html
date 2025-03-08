@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01 - Bai01</title>
+    <link rel="icon" type="image/png" href="assets/icon/icon.png">
+    <!-- Link đến Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Link File CSS (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link File CSS (fonts.css) -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <!-- Căn giữa cho logo -->
+        <div class="text-center">
+            <!-- img-fluid làm cho hình ảnh co giãn theo kích thước của trang -->
+            <img src="assets/img/logo.png" alt="FPT Logo" width="300" class="img-fluid">
+        </div>
+
+        <hr>
+
+        <!-- Content -->
+        <section class="news-section">
+            <!-- Tạo card chứa nội dung,  shadow-lg tạo hiệu ứng đổ bóng, mb-4 khoảng cách dưới-->
+            <div class="card shadow-lg mb-4">
+                <!-- Body của card -->
+                <div class="card-body">
+                    <!-- Chia bố cục thành 2 phần bằng Bootstrap Grid (row chia bố cục thành hàng ngang) (col-md-4, col-md-8) -->
+                    <div class="row">
+                        <!-- col-md-4 chia bố cục ra 4 phần (4/12) -->
+                        <div class="col-md-4">
+                            <!-- src: vị trí lưu của ảnh, alt: chú thích, class: img-fluid(ảnh co giãn), rounded(bo tròn góc của ảnh), shadow-lg(đổ bóng lớn)
+                             , news-img(thêm hiệu ứng từ file CSS), d-block(hiển thị ảnh theo dạng khối), mx-auto(tự động căn giữa),  loading="lazy" tải ảnh chậm giảm thời gian load trang -->
+                            <img src="assets/img/picture1.png" alt="FPT Picture"
+                                class="img-fluid rounded shadow-lg news-img d-block mx-auto" loading="lazy">
+                        </div>
+                        <!-- col-md-8 chia bố cục ra 8 phần (8/12)-->
+                        <div class="col-md-8">
+                            <!-- h3 tiêu đề của card dùng card-title (Bootstrap) -->
+                            <h3 class="card-title">Chào mừng đến với FPT Polytechnic</h3>
+                            <!-- Chứa nội dung của card dùng card-text (Bootstrap) -->
+                            <p class="card-text">
+                                <b>FPT Polytechnic</b> hân hạnh chào đón các bạn đến với môn học xây dựng trang web.
+                                Kết thúc môn học này, bạn có thể tự tay xây dựng cho mình một website dựa trên kiến thức
+                                <a href="https://vi.wikipedia.org/wiki/HTML" class="highlight" target="_blank"
+                                rel="noopener noreferrer">👉HTML</a>
+                                và 
+                                <a href="https://vi.wikipedia.org/wiki/CSS" class="highlight" target="_blank"
+                                rel="noopener noreferrer">👉CSS</a>.
+                            </p>
+                            <!-- href="https://caodang.fpt.edu.vn/" đường link của trang chủ FPT, class: btn(Button) tạo nút bấm, btn-primary(thêm hiệu ứng từ file CSS)
+                             , target="_blank" mở trang trong tab mới, rel="noopener noreferrer" tăng bảo mật khi mở một trang web từ bên ngoài -->
+                            <a href="https://caodang.fpt.edu.vn/" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card hoạt động tương tự, chỉ khác nội dung bên trong và đường link của nút bấm -->
+            <div class="card shadow-lg mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/picture2.png" alt="FPT Picture"
+                                class="img-fluid rounded shadow-lg news-img d-block mx-auto" loading="lazy">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="card-title">Trang web quản trị học tập LMS</h3>
+                            <p class="card-text">
+                                <b>LMS - Learning Management System</b> là một trang web quản trị học tập của trường FPT
+                                Polytechnic. Nó có thể giúp học sinh nộp bài online
+                                và giảng viên có thể xem và chấm điểm trực tiếp trên trang web.
+                            </p>
+                            <a href="https://lms9.poly.edu.vn/login.php?target=&client_id=fpolyhn&auth_stat="
+                                class="btn btn-primary" target="_blank" rel="noopener noreferrer">Truy cập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card hoạt động tương tự, chỉ khác nội dung bên trong và đường link của nút bấm -->
+            <div class="card shadow-lg mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/img/picture3.png" alt="FPT Picture"
+                                class="img-fluid rounded shadow-lg news-img d-block mx-auto" loading="lazy">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="card-title">Tài liệu học tập FLM</h3>
+                            <p class="card-text">
+                                <b>FLM</b> là trang web mà học sinh có thể tải các tài liệu học tập về trong máy tính cá nhân.
+                                Nó bao gồm các bài Lab, Assignment của môn học mà
+                                sinh viên đang theo học. Giảng viên cũng có thể tải về các tài liệu giảng dạy từ trang
+                                web này.
+                            </p>
+                            <a href="https://flm.poly.edu.vn/DefaultSignin" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">Truy cập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+    </div>
+
+    <!-- Gọi Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Hiển thị tên tác giả -->
+    <footer>
+        <p>Design by <span class="highlight"><a href="https://nguyenminh8.wordpress.com/" class="highlight"
+                    target="_blank" rel="noopener noreferrer">Nguyễn Quang Minh</a></span> <br> Copyright &copy; 2025
+        </p>
+    </footer>
+</body>
+
+</html>

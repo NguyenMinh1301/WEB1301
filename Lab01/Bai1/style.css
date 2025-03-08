@@ -1,0 +1,78 @@
+/* Font chữ Montserrat */
+body {
+    font-family: "Montserrat";
+}
+
+/* Font chữ Montserrat-Bold */
+body h3 {
+    font-family: "Montserrat-Bold";
+}
+
+/* Font chữ Montserrat-Bold */
+b {
+    font-family: "Montserrat-Bold";
+    color: #f27329;
+}
+
+/* Font chữ Montserrat-Bold */
+body a {
+    font-family: "Montserrat-Bold";
+    color: #f27329;
+    text-decoration: none;
+}
+
+/* Hiệu ứng Hover vào ảnh */
+.news-img {
+    /* Tốc độ 0.3 giây, ease-in-out làm chuyển động mợt hơn */
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-img:hover {
+    /* Phóng to 1.05 */
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    font-family: "Montserrat";
+}
+
+/* btn-primary chuyển nút bấm thành màu xanh nhạt khi đưa con trỏ chuột lại gần */
+.btn-primary:hover {
+    /*
+    color: #f8d210: màu của nút
+    border-color: #A1E3F9: màu viền của nút
+    transition: 0.3s ease-in-out: tốc độ chuyển màu và hiệu ứng làm mượt ease-in-out
+    */
+    background-color: #A1E3F9;
+    border-color: #A1E3F9;
+    transition: 0.3s ease-in-out;
+}
+
+/* Style của phần footer */
+footer {
+    /* 
+    text-align: center tự động căn giữa
+    padding: 20px: thêm khoảng cách bên trong
+    font-size: 16px: kích thước font chữ
+    background-color: #343a40: màu của background footer
+    color: white: màu chữ
+    margin-top: 40px: khoảng cách phía trên
+    */
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Style của chữ "Nguyễn Quang Minh" trong phần footer */
+footer a {
+    /*
+    color: #f8d210: màu của chữ
+    text-decoration: none: loại bỏ phần gạch chân của link
+    */
+    color: #f8d210;
+    text-decoration: none;
+}
+
