@@ -8,15 +8,28 @@ body {
     Text-decoration:none;
 }
 
-.p1:visited {
-    Color:green;    
+img {
+    align-items: center;
 }
 
-.p1:hover {
-    Color:red;
-    Text-decoration:underline;
+.menu {
+    text-align: center;
+    justify-content: space-between;
 }
 
+.menu a:visited {
+    color:green;
+}
+
+.menu a {
+    color:blue;
+    text-decoration:none;
+}
+
+.menu a:hover {
+    color: red;
+    text-decoration:underline;
+}
 /* Style của phần footer */
 footer {
     /* 
