@@ -1,40 +1,25 @@
-/* Font chữ Montserrat */
 body {
     font-family: "Montserrat";
 }
 
-/* Font chữ Montserrat-Bold */
 body h1 {
     font-family: "Montserrat-Bold";
     color: #f27329;
 }
 
 .album img {
-    /* Tốc độ 0.3 giây, ease-in-out làm chuyển động mợt hơn, filter: grayscale(1): cho thêm lớp màu xám vào ảnh
-    , cursor: pointer: chuyển con trỏ chuột thành bàn tay khi đưa lại vào ảnh, border-radius: 20px: bo tròn góc 20px */
     transition: 0.3s ease-in-out;
     cursor: pointer;
     filter: grayscale(1);
     border-radius: 20px;
 }
 
-/* Hiệu ứng Hover vào ảnh */
 .album img:hover {
-    /* Phóng to 1.01 */
     transform: scale(1.1);
     filter: grayscale(0);
 }
 
-/* Style của phần footer */
 footer {
-    /* 
-    text-align: center tự động căn giữa
-    padding: 20px: thêm khoảng cách bên trong
-    font-size: 16px: kích thước font chữ
-    background-color: #343a40: màu của background footer
-    color: white: màu chữ
-    margin-top: 40px: khoảng cách phía trên
-    */
     text-align: center;
     padding: 10px;
     font-size: 16px;
@@ -43,12 +28,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Style của chữ "Nguyễn Quang Minh" trong phần footer */
 footer a {
-    /*
-    color: #f8d210: màu của chữ
-    text-decoration: none: loại bỏ phần gạch chân của link
-    */
     color: #f8d210;
     text-decoration: none;
 }
