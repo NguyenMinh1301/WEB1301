@@ -44,7 +44,7 @@ function showWelcomeModal() {
                 <div class="student-info">
                     <p><strong>Họ và tên:</strong> Nguyễn Quang Minh</p>
                     <p><strong>MSSV:</strong> TV00291</p>
-                    <p><strong>Lớp:</strong> WEB1301</p>
+                    <p><strong>Môn:</strong> WEB1301</p>
                     <p><strong>Ngành:</strong> Công nghệ thông tin</p>
                 </div>
                 <p>Đây là trang web chứa các bài lab của môn học. Click vào các thư mục để xem các bài tập.</p>
