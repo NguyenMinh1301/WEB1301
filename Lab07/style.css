@@ -1,18 +1,8 @@
-/* Font chữ Montserrat */
 body {
     font-family: "Montserrat";
 }
 
-/* Style của phần footer */
 footer {
-    /* 
-    text-align: center tự động căn giữa
-    padding: 20px: thêm khoảng cách bên trong
-    font-size: 16px: kích thước font chữ
-    background-color: #343a40: màu của background footer
-    color: white: màu chữ
-    margin-top: 40px: khoảng cách phía trên
-    */
     text-align: center;
     padding: 10px;
     font-size: 16px;
@@ -21,13 +11,142 @@ footer {
     margin-top: 40px;
 }
 
-/* Style của chữ "Nguyễn Quang Minh" trong phần footer */
 footer a {
-    /*
-    color: #f8d210: màu của chữ
-    text-decoration: none: loại bỏ phần gạch chân của link
-    */
     color: #f8d210;
     text-decoration: none;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+}
+
+.site-header {
+    position: relative;
+    height: 300px;
+    background: url('assets/images/header.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.header-content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.header-content p {
+    font-size: 1.2rem;
+}
+
+.top-nav {
+    background: rgba(255,69,0,0.9);
+}
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu li {
+    position: relative;
+}
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.nav-menu li a:hover {
+    background: rgba(255,69,0,1);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+}
+.dropdown-menu li a {
+    color: #ff4500;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    background: #f4f4f4;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.sidebar {
+    flex: 1 1 250px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-right: 2px solid #ddd;
+}
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #ff4500;
+    text-transform: uppercase;
+}
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+.sidebar-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+.sidebar-menu li a:hover {
+    background: #ffebee;
+}
+.content {
+    flex: 3 1 700px;
+    padding: 20px;
+}
+.content iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+       flex-direction: column;
+    }
+    .sidebar {
+       border-right: none;
+       border-bottom: 2px solid #ddd;
+    }
+}
