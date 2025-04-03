@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab10 - Bai02</title>
+    <link rel="icon" type="image/png" href="assets/icon/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+
+<body>
+    <form class="form-container">
+        <h2 class="form-title">Đăng ký thông tin</h2>
+
+        <div class="form-group">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" id="fullname">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" checked> Nam</label>
+                <label><input type="radio" name="gender"> Nữ</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Hình ảnh</label>
+            <input type="file" id="image">
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Quốc tịch</label>
+            <select id="nationality">
+                <option>Việt Nam</option>
+                <option>Hàn Quốc</option>
+                <option>Nhật Bản</option>
+                <option>Trung Quốc</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Sở thích</label>
+            <div class="form-inline">
+                <label><input type="checkbox"> Thể thao</label>
+                <label><input type="checkbox"> Du lịch</label>
+                <label><input type="checkbox"> Âm nhạc</label>
+                <label><input type="checkbox"> Ẩm thực</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="note">Ghi chú</label>
+            <textarea id="note" rows="3"></textarea>
+        </div>
+
+        <hr>
+
+        <div class="form-buttons">
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>Design by <span class="highlight"><a href="https://nguyenminh8.wordpress.com/" class="highlight"
+                    target="_blank" rel="noopener noreferrer">Nguyễn Quang Minh</a></span> <br> Copyright &copy; 2025
+        </p>
+    </footer>
+</body>
+
+</html>
