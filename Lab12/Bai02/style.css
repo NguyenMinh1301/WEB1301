@@ -1,0 +1,56 @@
+body {
+    font-family: "Montserrat";
+}
+
+.video-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.video-layout iframe {
+    width: 640px;
+    height: 460px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-thumbnails img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnails img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+footer {
+    
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #f8d210;
+    text-decoration: none;
+}
+
