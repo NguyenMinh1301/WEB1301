@@ -2,7 +2,8 @@
 
 Dự án này tổng hợp các bài thực hành môn **WEB1013 – Xây Dựng Trang Web**, bao gồm kiến thức nền tảng HTML, CSS và triển khai website thực tế. Các bài lab được tổ chức từ cơ bản đến nâng cao, phù hợp cho sinh viên ngành CNTT và Thiết kế web.
 
-Bạn có thể xem demo toàn bộ các bài Lab bằng cách truy cập link này: [nguyenminh1301.github.io/WEB1301/](https://nguyenminh1301.github.io/WEB1301/)
+Bạn có thể xem demo toàn bộ các bài Lab bằng cách nhấp vào [đây](https://nguyenminh1301.github.io/WEB1301/)
+Bạn có thể xem bài Assignment bằng cách nhấp vào [đây](https://github.com/NguyenMinh1301/movie-web)
 
 ---
 
